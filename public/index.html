@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor M4A a MP3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor M4A a MP3</h1>
+        <form id="uploadForm" action="/convert" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" name="file" id="file" accept=".m4a" required hidden>
+                <label for="file" class="upload-btn">Subir Archivo</label>
+                <p id="fileName" class="file-name">No se ha seleccionado ningún archivo</p>
+            </div>
+            <button type="submit" id="convertBtn" class="convert-btn" hidden>Convertir</button>
+        </form>
+        <p id="status" class="status-message"></p>
+    </div>
+    <script src="convert.js"></script>
+</body>
+</html>
