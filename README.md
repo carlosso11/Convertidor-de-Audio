@@ -1,6 +1,6 @@
 # 🎵 Convertidor de Audio M4A a MP3 🎵
 
-¡Bienvenido al Convertidor de Audio más rápido y sencillo! Este proyecto te permite transformar archivos en formato **.M4A** a **.MP3** con unos simples pasos. 🚀
+¡Bienvenido al Convertidor de Audio más rápido y sencillo! Este proyecto te permite transformar archivos en formato **.M4A** a **.MP3** (actualmente, probablemente en un futuro más formatos de audio) con unos simples pasos. 🚀
 
 ---
 
