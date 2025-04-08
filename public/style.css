@@ -3,13 +3,23 @@ body {
     color: #ffffff;
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Cambiado para que el contenido y el footer estén en columnas */
+    justify-content: space-between; /* Asegura que el contenido y el footer se distribuyan correctamente */
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
     margin: 0;
 }
 
+
 .container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +28,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    user-select: none;
 }
+
 
 h1 {
     margin-bottom: 20px;
@@ -74,12 +86,29 @@ h1 {
 }
 
 /* Pie de página */
+
 .footer {
     text-align: center;
-    margin-top: 30px;
     padding: 10px;
     background-color: #1e1e1e;
     color: #ffffff;
     font-size: 14px;
     border-top: 1px solid #333;
+    position: relative; /* Cambiado de sticky a relative */
+    bottom: 0;
+    width: 100%;
+}
+
+.download-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
 }
